@@ -1,0 +1,22 @@
+@import 'src/styles/vars';
+
+
+.header {
+  text-align: center;
+  padding: 1rem;
+
+  &-logo {
+    width: 75px;
+    // on peut inclure un mixin, c'est comme executer une fonction et récupérer sa valeur de retour
+    // on peut passer un contenu au mixin entre accolade, il sera récupérable via @content dans le mixin
+    @include mq() {
+      width: 150px;
+    };
+  }
+}
+
+// @media (min-width: 700px) {
+//   .header-logo {
+//     width: 300px;
+//   }
+// }

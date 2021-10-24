@@ -1,0 +1,13 @@
+@import 'src/styles/vars';
+
+.app {
+  background-color: $light-grey; 
+  width: 90%;
+  margin: auto;
+  min-height: 100vh;
+  padding:0 1rem;
+
+  @include mq() {
+    width: 80%;
+  };
+}
