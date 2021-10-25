@@ -13,8 +13,6 @@ Message.propTypes = {
   hasError: PropTypes.bool,
 };
 
-// on peut donner des valeurs par défaut à nos props
-// https://fr.reactjs.org/docs/typechecking-with-proptypes.html#default-prop-values
 Message.defaultProps = {
   hasError: false,
 };
